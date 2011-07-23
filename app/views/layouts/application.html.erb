@@ -1,14 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-  <title>SampleApp</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title>Rails rock App | <%= @title %></title>
+    <%= csrf_meta_tag %>
+  </head>
+  <body id="body">
+    <%= yield %>
+  </body>
 </html>
+
