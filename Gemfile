@@ -9,5 +9,6 @@ group :test, :development do
   gem 'webrat'
   gem 'spork', '~> 0.9.0.rc'
   gem 'autotest-rails'
-  gem "autotest-growl", "~> 0.2.9"
+  gem 'autotest-growl', '~> 0.2.9'
+  gem 'annotate', '~>2.4.0'
 end
