@@ -11,6 +11,6 @@ module ApplicationHelper
   end
 
   def logo
-    link_to image_tag("logo.png", :alt => "Sample app", :class => "round")
+    image_tag("logo.png", :alt => "Sample app", :class => "round")
   end
 end
