@@ -1,6 +1,9 @@
 SampleApp::Application.routes.draw do
   
-  get "users/new"
+  resources :users
+  
+  #don't 'need the line below if we have resource :users
+  # get "users/new"
 
   root :to => "pages#home"
 
