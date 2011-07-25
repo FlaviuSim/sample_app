@@ -11,4 +11,5 @@ group :test, :development do
   gem 'autotest-rails'
   gem 'autotest-growl', '~> 0.2.9'
   gem 'annotate', '~>2.4.0'
+  gem "factory_girl", "~> 2.0.1"
 end
