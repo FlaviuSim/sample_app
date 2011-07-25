@@ -4,6 +4,8 @@ gem 'rails', '3.0.9'
 
 gem 'sqlite3'
 
+gem "gravatar_image_tag", "~> 1.0.0"
+
 group :test, :development do
   gem 'rspec-rails', '~> 2.6'
   gem 'webrat'
