@@ -75,6 +75,7 @@ RSpec.configure do |config|
   def test_sign_in(user)
     controller.current_user = user
   end
+
    require 'factory_girl'
   Factory.find_definitions
 end
