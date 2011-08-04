@@ -14,11 +14,16 @@ namespace :db do
       name = Faker::Name.name
       email = "example-#{n+1}@railstutorial.org"
       password = "password"
-      puts email
       User.create!(:name => name,
                    :email => email,
                    :password => password,
                    :password_confirmation => password)
+    end
+
+    User.all(:limit => 6).each do |user|
+      50.times do
+        user.microposts.create!(:content => Faker::Lorem.sentence(5)) 
+      end
     end
   end 
 end
