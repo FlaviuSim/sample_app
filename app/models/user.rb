@@ -27,7 +27,7 @@ class User < ActiveRecord::Base
 
   def feed
     # new syntax in rails 3
-    Micropost.where("user_id = ?", id)
+    Micropost.from_users_followed_by(self)
   end
 
   def following?(followed)
